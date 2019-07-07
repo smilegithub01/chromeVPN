@@ -2,7 +2,7 @@
 cls
 @echo off
 IF EXIST %~dp0Browser\chrome.exe (
-    start %~dp0Browser\chrome.exe --user-data-dir=%~dp0chrome-user-data --proxy-pac-url=https://raw.githubusercontent.com/bannedbook/fanqiang/master/jw/jwproxy.js https://www.bannedbook.org/bnews/fq/?utm_source=chromepac
+    start %~dp0Browser\chrome.exe  --proxy-pac-url=https://raw.githubusercontent.com/bannedbook/fanqiang/master/jw/jwproxy.js https://www.google.com
 ) ELSE (
-    start chrome.exe --user-data-dir=%~dp0chrome-user-data --proxy-pac-url=https://raw.githubusercontent.com/bannedbook/fanqiang/master/jw/jwproxy.js https://www.bannedbook.org/bnews/fq/?utm_source=chromepac
+    start chrome.exe  --proxy-pac-url=https://raw.githubusercontent.com/bannedbook/fanqiang/master/jw/jwproxy.js https://www.google.com
 )

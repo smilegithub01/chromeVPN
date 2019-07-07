@@ -2,7 +2,7 @@
 cls
 @echo off
 IF EXIST %~dp0Browser\chrome.exe (
-    start %~dp0Browser\chrome.exe --user-data-dir=%~dp0chrome-user-data https://lihi.cc/PZxJ1/chromego
+    start %~dp0Browser\chrome.exe  https://www.google.com
 ) ELSE (
-    start chrome.exe --user-data-dir=%~dp0chrome-user-data https://lihi.cc/PZxJ1/chromego
+    start chrome.exe https://www.google.com
 )

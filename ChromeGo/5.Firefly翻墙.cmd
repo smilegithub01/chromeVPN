@@ -14,7 +14,7 @@ start "" "%~dp0Firefly\firefly.exe"
 echo ÕýÔÚÆô¶¯£¬ÇëÉÔºò...
 start /wait "" "%~dp0waiting.vbs"
 IF EXIST %~dp0Browser\chrome.exe (
-    start %~dp0Browser\chrome.exe --user-data-dir=%~dp0chrome-user-data --proxy-pac-url=%~dp0Firefly\firefly.pac https://www.bannedbook.org/bnews/fq/?utm_source=chfirefly
+    start %~dp0Browser\chrome.exe  --proxy-pac-url=%~dp0Firefly\firefly.pac https://www.google.com
 ) ELSE (
-    start chrome.exe --user-data-dir=%~dp0chrome-user-data --proxy-pac-url=%~dp0Firefly\firefly.pac https://www.bannedbook.org/bnews/fq/?utm_source=chfirefly
+    start chrome.exe  --proxy-pac-url=%~dp0Firefly\firefly.pac https://www.google.com
 )
